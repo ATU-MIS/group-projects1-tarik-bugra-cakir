@@ -69,3 +69,6 @@ UI --> Doctor : Show Appointment List
 - index.html
 - script1.js
 - style1.css
+## 📝 Use Case Senaryosu
+Detaylı use-case senaryosu **Proje Senaryo.docx** dosyasında yer almaktadır.
+
