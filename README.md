@@ -25,9 +25,45 @@ Sequence diagram ile modellenen ana etkileşim:
 **Hasta Randevu Alma (Book Appointment)**  
 Detaylı senaryo Word belgesinde yer almaktadır.
 
-## 🧩 PlantUML Dosyaları
-- hastane_sequence.puml.txt
-- doctor_view_sequence.puml.txt
+## 🧩 PlantUML Kodları
+
+### Book Appointment – PlantUML
+```plantuml
+@startuml
+actor Patient
+boundary "Patient UI" as UI
+control "Appointment Controller" as AC
+database "Appointment DB" as DB
+
+Patient -> UI : Request Appointment
+UI -> AC : createAppointment()
+AC -> DB : saveAppointment(status="Pending")
+DB --> AC : success
+AC --> UI : confirmation
+UI --> Patient : Appointment Created
+@enduml
+
+
+@startuml
+actor Doctor
+boundary "Doctor UI" as UI
+control "Appointment Controller" as AC
+database "Appointment DB" as DB
+
+Doctor -> UI : Login
+UI -> AC : authenticateDoctor()
+AC -> DB : checkCredentials()
+DB --> AC : valid
+AC --> UI : loginSuccess
+
+Doctor -> UI : View Appointments
+UI -> AC : getAppointments(doctorId)
+AC -> DB : fetchAppointments(doctorId)
+DB --> AC : appointmentList
+AC --> UI : displayAppointments
+UI --> Doctor : Show Appointment List
+@enduml
+
 
 ## 💻 Uygulama Dosyaları
 - index.html
