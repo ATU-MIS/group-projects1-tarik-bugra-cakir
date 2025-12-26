@@ -9,8 +9,14 @@ Bu proje, bir hastane randevu sisteminin UML diyagramları ve basit bir web uygu
 ## Class Diagram
 ![Class Diagram](projeclass_diagram.png)
 
+## Sequence Diagrams
+
+### Book Appointment
 ![Book Appointment Sequence](sequence_diagram.jpeg.jpeg)
+
+### Doctor Views Appointments
 ![Doctor Sequence](Sequence_diagramdtocor.png)
+
 
 
 
