@@ -1,29 +1,28 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7jTrgXmk)
 # Hospital Appointment Management System
 
 Bu proje, bir hastane randevu sisteminin UML diyagramları ve basit bir web uygulaması ile modellenmesini amaçlamaktadır.
 
-## Use Case Diagram
+---
+
+## 📌 UML Diyagramları
+
+### 🔹 Use Case Diagram
 ![Use Case Diagram](projese_use_case.png)
 
-## Class Diagram
+### 🔹 Class Diagram
 ![Class Diagram](projeclass_diagram.png)
 
-## Sequence Diagrams
+---
 
-### Book Appointment
+## 🔁 Sequence Diagrams
+
+### 🧑‍⚕️ Book Appointment – Patient
 ![Book Appointment Sequence](sequence_diagram.jpeg.jpeg)
 
-### Doctor Views Appointments
+### 👨‍⚕️ Doctor Views Appointments
 ![Doctor Sequence](Sequence_diagramdtocor.png)
 
-
-
-
-## 📝 Use Case Senaryosu
-Sequence diagram ile modellenen ana etkileşim:
-**Hasta Randevu Alma (Book Appointment)**  
-Detaylı senaryo Word belgesinde yer almaktadır.
+---
 
 ## 🧩 PlantUML Kodları
 
@@ -42,6 +41,7 @@ DB --> AC : success
 AC --> UI : confirmation
 UI --> Patient : Appointment Created
 @enduml
+
 
 
 @startuml
