@@ -42,6 +42,9 @@ AC --> UI : confirmation
 UI --> Patient : Appointment Created
 @enduml
 
+
+### Doctor Views Appointmetns- Doctor(Sequence diagramdtocr)
+'''plantuml
 @startuml
 actor Doctor
 boundary "Doctor UI" as UI
