@@ -3,10 +3,15 @@
 
 Bu proje, bir hastane randevu sisteminin UML diyagramları ve basit bir web uygulaması ile modellenmesini amaçlamaktadır.
 
-![Use Case Diagram](projese use case.png)
+## Use Case Diagram
+![Use Case Diagram](projese_use_case.png)
+
+## Class Diagram
+![Class Diagram](projeclass_diagram.png)
+
 ![Book Appointment Sequence](sequence_diagram.jpeg.jpeg)
 ![Doctor Sequence](Sequence_diagramdtocor.png)
-![Class Diagram](projeclass diagram.png)
+
 
 
 ## 📝 Use Case Senaryosu
