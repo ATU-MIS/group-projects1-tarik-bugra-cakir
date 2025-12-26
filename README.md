@@ -25,7 +25,9 @@ Bu proje, bir hastane randevu sisteminin UML diyagramları ve basit bir web uygu
 ---
 
 ## 🧩 PlantUML Kodları
-Book Appointment – Patient (Sequence Diagram)
+
+### Book Appointment – Patient (Sequence Diagram)
+```plantuml
 @startuml
 actor Patient
 boundary "Patient UI" as UI
@@ -40,7 +42,6 @@ AC --> UI : confirmation
 UI --> Patient : Appointment Created
 @enduml
 
-Doctor Views Appointments (Sequence Diagram)
 @startuml
 actor Doctor
 boundary "Doctor UI" as UI
