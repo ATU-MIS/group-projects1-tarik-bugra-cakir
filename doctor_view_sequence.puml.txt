@@ -1,0 +1,19 @@
+@startuml
+actor Doctor
+boundary "Doctor UI" as UI
+control "Appointment Controller" as AC
+database "Appointment DB" as DB
+
+Doctor -> UI : Login
+UI -> AC : authenticateDoctor()
+AC -> DB : checkCredentials()
+DB --> AC : valid
+AC --> UI : loginSuccess
+
+Doctor -> UI : View Appointments
+UI -> AC : getAppointments(doctorId)
+AC -> DB : fetchAppointments(doctorId)
+DB --> AC : appointmentList
+AC --> UI : displayAppointments
+UI --> Doctor : Show Appointment List
+@enduml

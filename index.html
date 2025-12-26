@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hastane Randevu Sistemi</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div class="card" id="login-section">
+    <h2>Giriş Yap</h2>
+    <input type="email" id="login-email" placeholder="E-posta">
+    <input type="password" id="login-password" placeholder="Şifre">
+    <button class="btn-primary" onclick="login()">Giriş</button>
+    <p><a href="#" onclick="showSection('register-section')">Hasta Kayıt</a></p>
+</div>
+
+<!-- REGISTER -->
+<div class="card hidden" id="register-section">
+    <h2>Hasta Kayıt</h2>
+    <input type="text" id="reg-name" placeholder="Ad Soyad">
+    <input type="email" id="reg-email" placeholder="E-posta">
+    <input type="password" id="reg-password" placeholder="Şifre">
+    <button class="btn-primary" onclick="registerPatient()">Kayıt Ol</button>
+</div>
+
+<!-- PATIENT -->
+<div class="card wide hidden panel" id="patient-panel">
+    <button class="btn-logout" onclick="logout()">Çıkış</button>
+    <h2>Hasta Paneli</h2>
+
+    <select id="clinic-select" onchange="loadDoctors()">
+        <option value="">Klinik Seç</option>
+        <option>Dahiliye</option>
+        <option>Kardiyoloji</option>
+        <option>Göz Hastalıkları</option>
+    </select>
+
+    <select id="doctor-select">
+        <option value="">Doktor Seç</option>
+    </select>
+
+    <input type="date" id="app-date">
+    <input type="time" id="app-time">
+
+    <button class="btn-primary" onclick="bookAppointment()">Randevu Al</button>
+
+    <h3>Randevularım</h3>
+    <ul id="patient-apps"></ul>
+
+    <h3>Tahlillerim</h3>
+    <ul id="patient-tests"></ul>
+</div>
+
+<!-- DOCTOR -->
+<div class="card wide hidden panel" id="doctor-panel">
+    <button class="btn-logout" onclick="logout()">Çıkış</button>
+    <h2>Doktor Paneli</h2>
+    <ul id="doctor-apps"></ul>
+</div>
+
+<!-- SECRETARY -->
+<div class="card wide hidden panel" id="secretary-panel">
+    <button class="btn-logout" onclick="logout()">Çıkış</button>
+    <h2>Sekreter Paneli</h2>
+    <ul id="secretary-apps"></ul>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
