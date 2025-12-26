@@ -44,7 +44,6 @@ UI --> Patient : Appointment Created
 
 
 ### Doctor Views Appointmetns- Doctor(Sequence diagramdtocr)
-'''plantuml
 @startuml
 actor Doctor
 boundary "Doctor UI" as UI
