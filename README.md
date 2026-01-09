@@ -7,10 +7,10 @@ Bu proje, bir hastane randevu sisteminin UML diyagramları ve basit bir web uygu
 ## 📌 UML Diyagramları
 
 ### 🔹 Use Case Diagram
-![Use Case Diagram](projese_use_case.png)
+![Use Case Diagram final](projese_use_case.png)
 
 ### 🔹 Class Diagram
-![Class Diagram](projeclass_diagram.png)
+![Class Diagram final](projeclass_diagram.png)
 
 ---
 
