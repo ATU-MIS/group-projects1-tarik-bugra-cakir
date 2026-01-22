@@ -71,4 +71,4 @@ UI --> Doctor : Show Appointment List
 - style1.css
 ## 📝 Use Case Senaryosu
 Detaylı use-case senaryosu **Proje Senaryo.docx** dosyasında yer almaktadır.
-
+eski modeller karışmaması için dosya olarak attım readme içinde yok.
